@@ -9,6 +9,13 @@ const rye = Rye({ weight:'400', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Convite para o Circo Mágico da Elisa',
   description: 'Convite de aniversário de 1 ano de Elisa',
+  metadataBase: new URL('https://circomagicodaelisa.netlify.app/'),
+  openGraph: {
+    type: 'website',
+    url: 'https://circomagicodaelisa.netlify.app/',
+    title: `Convite para o Circo Mágico da Elisa`,
+    description: `Convite de aniversário de 1 ano de Elisa`
+  }
 }
 
 export default function RootLayout({
